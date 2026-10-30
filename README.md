@@ -10,11 +10,11 @@ Curated copy of msitarzewski/agency-agents (MIT): 232 agent role specs across 16
 - `.rig/work-routing.yaml` - which spec answers which task family.
 - `docs/CATALOG.md` - the full catalogue table (extracted from this README, 2026-10-29).
 
-## Verify
+## Verify (the smoke)
 
 ```bash
-grep -c '^| ' INDEX.md            # 232 rows: one per spec
-grep -c '^| ' docs/CATALOG.md     # same catalogue, kept in lockstep
+grep -c "^| " INDEX.md            # 232 data rows: one per spec
+grep -c "^| " docs/CATALOG.md     # same catalogue, kept in lockstep
 python3 mcp/server.py </dev/null   # stdio server boots and exits cleanly
 ```
 
