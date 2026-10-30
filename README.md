@@ -1,5 +1,7 @@
 # rig-domain-agents
 
+![CI status](https://img.shields.io/github/actions/workflow/status/mrodgersjs-web/rig-domain-agents/ci.yml?label=CI&logo=github-actions)
+
 Curated copy of msitarzewski/agency-agents (MIT): 232 agent role specs across 16 departments, plus a RIG index, MCP server and routing config. The specs are upstream; the index, the routing table and the MCP surface are this fork.
 
 ## What is here
