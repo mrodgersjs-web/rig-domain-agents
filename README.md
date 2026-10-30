@@ -13,8 +13,12 @@ Curated copy of msitarzewski/agency-agents (MIT): 232 agent role specs across 16
 ## Verify
 
 ```bash
-python3 mcp/server.py --index-only   # index loads, counts match the tree
+grep -c '^| ' INDEX.md            # 232 rows: one per spec
+grep -c '^| ' docs/CATALOG.md     # same catalogue, kept in lockstep
+python3 mcp/server.py </dev/null   # stdio server boots and exits cleanly
 ```
+
+If the two counts disagree, the index drifted - that is a bug, not a warning.
 
 Upstream: https://github.com/msitarzewski/agency-agents (MIT) - attribution and per-file provenance in `docs/CATALOG.md`.
 
